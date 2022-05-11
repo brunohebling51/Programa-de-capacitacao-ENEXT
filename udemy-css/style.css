@@ -1,0 +1,46 @@
+#conteudo {
+    background: #CCC;
+    width: 850px;
+    height: 1000px;
+    margin: auto;
+}
+
+#topo {
+    background: #09C;
+    width: 850px;
+    height: 200px;
+}
+
+#menu {
+    background: #666;
+    width: 850px;
+    height: 40px;
+}
+
+#fotop {
+    background: #999;
+    width: 630px;
+    height: 180px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#contrel {
+    background: #999;
+    width: 180px;
+    height: 260px;
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.descl {
+    background: #999;
+    width: 630px;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
