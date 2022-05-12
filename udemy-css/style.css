@@ -1,48 +1,114 @@
 #conteudo {
-    background: #CCC;
-    width: 850px;
-    height: 1000px;
-    margin: auto;
+  background: #ccc;
+  width: 850px;
+  height: 1130px;
+  margin: auto;
 }
 
 #topo {
-    background: #09C;
-    width: 850px;
-    height: 200px;
+  background: #09c;
+  width: 850px;
+  height: 200px;
 }
 
 #menu {
-    background: #666;
-    width: 850px;
-    height: 40px;
+  background: #666;
+  width: 850px;
+  height: 40px;
 }
 
 #fotop {
-    background: #999;
-    width: 630px;
-    height: 180px;
-    float: left;
-    margin-top: 20px;
-    margin-left: 10px;
+  background: #999;
+  width: 630px;
+  height: 180px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 #contrel {
-    background: #999;
-    width: 180px;
-    height: 260px;
-    float: right;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 10px;
+  background: #999;
+  width: 180px;
+  height: 260px;
+  float: right;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
-.descl {
-    background: #999;
-    width: 630px;
-    height: 180px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
-
+#descl {
+  background: #999;
+  width: 630px;
+  height: 70px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
+#caixa {
+  width: 850px;
+  height: 250px;
+  float: left;
+  margin-top: 30px;
+}
+
+#caixa2 {
+  width: 850px;
+  height: 250px;
+  float: left;
+  margin-top: 10px;
+}
+
+.not1 {
+  background: #999;
+  width: 305px;
+  height: 170px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.not2 {
+  background: #999;
+  width: 305px;
+  height: 170px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dnot1 {
+  background: #999;
+  width: 305px;
+  height: 70px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dnot2 {
+  background: #999;
+  width: 305px;
+  height: 70px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.redes {
+  background: #999;
+  width: 180px;
+  height: 250px;
+  float: right;
+  margin-right: 10px;
+}
+
+#rodape {
+  width: 850px;
+  height: 50px;
+  text-align: center;
+  background: #666;
+  float: left;
+  
+}
