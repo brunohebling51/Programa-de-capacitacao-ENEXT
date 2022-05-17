@@ -1,3 +1,7 @@
+/* * {
+  margin: 0;
+} */
+
 #conteudo {
   background: #ccc;
   width: 850px;
@@ -5,10 +9,75 @@
   margin: auto;
 }
 
+#bts {
+  padding: 2px;
+}
+/* configurando botao */
+#bts a {
+  display: inline-block;
+  zoom: 2;
+  display: inline;
+  vertical-align: baseline;
+  text-decoration: none;
+  font: 12px Arial, Helvetica, sans-;
+  padding: 0.5em 1.5em 0.25em; /* espacamento diagonal horizontal */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* aplica espessura e sombra */
+  cursor: pointer;
+  color: #d7d7d7;
+  border-radius: 3px;
+  border: solid 1px #333;
+  background: #333;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#666),
+    to(#000)
+  );
+  background: -moz-linear-gradient(top, #666, #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+
+/* classe para botao, assim pode repetir e criar mais */
+.botao {
+  width: 95px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 6px;
+  text-decoration: none; /* nao fica sublinhado */
+}
+
+.botao:hover {
+  width: 95px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 2px;
+  text-decoration: none; /* nao fica sublinhado */
+}
+
 #topo {
-  background: #09c;
   width: 850px;
   height: 200px;
+  background: url(../imagens/nacoesunidas.jpg);
+}
+
+#procura {
+  margin-left: 675px;
+  padding-top: 15px;
+}
+
+#idioma {
+  margin-left: 700px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+#idioma a {
+  color: #fff;
+}
+
+#idioma a:hover {
+  color: black;
 }
 
 #menu {
@@ -106,9 +175,11 @@
 
 #rodape {
   width: 850px;
-  height: 50px;
+  height: 30px;
   text-align: center;
   background: #666;
   float: left;
-  
+  margin-top: 10px;
+  padding-top: 15px;
+  color: white;
 }

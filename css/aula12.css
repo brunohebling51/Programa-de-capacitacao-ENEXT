@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+#topo {
+  width: 100%;
+  position: absolute;
+}
+
+.botao {
+  width: 95px;
+  height: 30px;
+}
+
+#conteudo {
+  width: 100%;
+  min-width: 70%;
+}
+
+#menu {
+  width: 20%;
+  position: absolute;
+}
+
+#texto {
+  margin-left: 140px;
+  position: absolute;
+  right: 40px;
+  height: 50px;
+  width: 80%;
+  overflow: auto; !important
+}
