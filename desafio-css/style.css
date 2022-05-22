@@ -273,6 +273,11 @@ a:hover {
     column-gap: 12px;
     row-gap: 19px;
   }
+
+  .item {
+    width: 500px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 765px) {
@@ -291,6 +296,12 @@ a:hover {
     column-gap: 12px;
     row-gap: 19px;
   }
+
+  .item {
+    width: 500px;
+    height: 250px;
+  }
+
 
   #header {
     flex-direction: column;
@@ -348,6 +359,12 @@ a:hover {
     row-gap: 19px;
   }
 
+  .item {
+    width: 500px;
+    height: 250px;
+  }
+
+
   #header {
     flex-direction: column;
     padding: 20px 0;
@@ -359,6 +376,7 @@ a:hover {
     position: fixed;
     color: white;
     height: 180px;
+    width: 100%;
   }
 
   .menu-list {
