@@ -296,7 +296,7 @@ a:hover {
 
   #header {
     flex-direction: column;
-    padding: 20px 0;
+    padding: 5px 0px;
     font-family: system, "Helvetica Neue", "Helvetica";
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       rgba(255, 255, 255, 0.1);
@@ -304,7 +304,7 @@ a:hover {
     backdrop-filter: blur(20px);
     position: fixed;
     color: white;
-    height: 180px;
+    height: 150px;
     width: 100%;
   }
 
@@ -318,8 +318,20 @@ a:hover {
     letter-spacing: 3px;
     margin-left: 32px;
   }
-}
 
+  .text-capa {
+    padding: 35px;
+    text-align: center;
+  }
+  
+  .input-msg {
+    margin-top: 7px;
+  }
+
+  .botao-enviar {
+    margin-top: 7px;
+  }
+}
 
 @media (max-width: 390px) {
   .infos {
