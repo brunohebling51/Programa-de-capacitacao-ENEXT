@@ -91,7 +91,6 @@ a:hover {
 /* ------------ perfil -------------- */
 
 #perfil {
-  /* padding: 0 127px 0 127px; */
   margin-top: -181px;
   display: flex;
   flex-direction: column;
@@ -117,7 +116,6 @@ a:hover {
   grid-template-columns: 40% 60%;
   margin-top: 50px;
 }
-
 
 #perfil .left {
   padding: 0;
@@ -183,7 +181,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 335px);
   grid-template-rows: repeat(3, 180px);
-  /* height: 540px; */
   padding: 15px 0px 84px 0px;
   column-gap: 12px;
   row-gap: 19px;
@@ -281,3 +278,56 @@ a:hover {
   }
 }
 
+@media (max-width: 765px) {
+  .infos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 221px 300px;
+  }
+
+  .infos .right {
+    margin-top: 15px;
+  }
+
+  .items {
+    grid-template-columns: 600px;
+    grid-template-rows: 250px;
+    column-gap: 12px;
+    row-gap: 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .infos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 221px 300px;
+  }
+
+  .infos .right {
+    margin-top: 15px;
+  }
+
+  .items {
+    grid-template-columns: 600px;
+    grid-template-rows: 250px;
+    column-gap: 12px;
+    row-gap: 19px;
+  }
+}
+
+@media (max-width: 475px) {
+  .infos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 221px 300px;
+  }
+
+  .infos .right {
+    margin-top: 15px;
+  }
+
+  .items {
+    grid-template-columns: 600px;
+    grid-template-rows: 250px;
+    column-gap: 12px;
+    row-gap: 19px;
+  }
+}
