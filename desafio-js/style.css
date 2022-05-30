@@ -1,0 +1,15 @@
+#container {
+    border: 1px solid black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(128, 188, 223);
+}
+
+#temp, #description {
+    padding-top: 100px;
+    text-decoration: none;
+}

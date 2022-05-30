@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lógica de programação Javascript</title>
+    </head>
+    <!-- primeira aula de lacos de repeticoes -->
+    <!-- loop for -->
+
+    <body>
+        <h1>Lógica de programação Javascript</h1>
+        <script>
+            let numero = prompt("Digite um numero");
+            numero = parseFloat(numero);
+
+            // repita ate que indice seja <= 1000
+            // let endice = 1001;
+            // do {
+            //     document.write(numero + ' x ' + indice + ' = ' + (numero * indice) + ' <br>');
+            //     indice = indice + 1; // mesma coisa que escrever o de baixo
+            //     indice += 1; // mesma coisa que escrever o de cima
+            //     indice++; // mesma coisa que escrever os de cima
+            // } while (indice <= 1000)
+
+            for (let i = 1; i <= 1000; i++) {
+                document.write(numero + ' x '+ i +' = ' + (numero * i) + ' <br>');
+            }
+            document.write('saiu do loop');
+        </script>
+    </body>
+
+</html>

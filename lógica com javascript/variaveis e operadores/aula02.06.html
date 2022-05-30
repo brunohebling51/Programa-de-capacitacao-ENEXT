@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lógica de programação Javascript</title>
+    </head>
+    <!-- exercicio de if e else, apresentando se o launo foi aprovado ou nao conforme media calculada
+    o comando parseInt(Math.random()) gera um numero de 0 a 1 aleatoriamente -->
+
+    <body>
+        <h1>Lógica de programação Javascript</h1>
+        <script>
+            // // jogador um digita um numero
+            // let nJogador1 = prompt("Numero do jogador 1");
+            // nJogador1 = parseInt(nJogador1);
+            // // jogador dois digita outro numero
+            // let nJogador2 = prompt("Numero do jogador 2");
+            // nJogador2 = parseInt(nJogador2);
+            // // se forem iguais, mostrar mensagem 'empate'
+            // if (nJogador1 === nJogador2) {
+            //     alert('Vocês empataram');
+            // } else {
+            //     // sortear um numero entre 0 e 1
+            //     let nSorteado = parseInt(Math.random() * 2);
+            //     // se o numero sorteado for 0, ganha quem escolher o numero menor
+            // }
+            // if (nSorteado === 0) {
+            //     if (nJogador1 < nJogador2) {
+            //         alert('ganhou o jogador 1');
+            //     } else {
+            //         alert('ganhou o jogador 2');
+            //     }
+            //     // se o numero sorteado for 1, ganha quem escolehr o numero maior
+            // } else {
+            //     if (nJogador1 > nJogador2) {
+            //         alert('ganhou o jogador 1');
+            //     } else {
+            //         alert('ganhou o jogador 2');
+            //     }
+            // }
+
+            // jogador um digita um numero
+            let nJogador1 = prompt("Numero do jogador 1");
+            nJogador1 = parseInt(nJogador1);
+            // jogador dois digita outro numero
+            let nJogador2 = prompt("Numero do jogador 2");
+            nJogador2 = parseInt(nJogador2);
+            // se forem iguais, mostrar mensagem 'empate'
+            if (nJogador1 === nJogador2) {
+                alert('Vocês empataram');
+            } else {
+                // sortear um numero entre 0 e 1
+                let nSorteado = parseInt(Math.random() * 2);
+                // se o numero sorteado for 0, ganha quem escolher o numero menor
+            }
+            if (nSorteado === 0) {
+                if (nJogador1 < nJogador2) {
+                    alert('ganhou o jogador 1');
+                } else {
+                    alert('ganhou o jogador 2');
+                }
+                //    se o numero sorteado for 1, ganha quem escolehr o numero maior
+                // } else {
+                //     if (nJogador1 > nJogador2) {
+                //         alert('ganhou o jogador 1');
+                //     } else {
+                //         alert('ganhou o jogador 2');
+                //     }
+                // }
+
+                if (nSorteado === 0 && nJogador1 < nJogador2 || nSorteado === 1 && nJogador1 > Njogador2) {
+                    alert('ganhou o jogador 1');
+                } else {
+                    alert('ganhou o jogador 2');
+                }
+            }
+        </script>
+    </body>
+
+</html>
