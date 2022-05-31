@@ -4,14 +4,120 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <title>Aprendendo JavaScript</title>
+        <style>
+            .balao {
+                margin-top: 50px;
+                width: 50px;
+                height: 60px;
+                background-color: #000000;
+                border-radius: 30px;
+                position: absolute;
+            }
+
+        </style>
+
+        <script type="text/javascript" src="/js/script.js"></script>
+
     </head>
 
     <body>
-        <button>Mudar usuário</button>
-        <h1>Ola</h1>
-        <script src="/js/script.js"></script>
+
+        <!-- funcoes -->
+        <!-- <div id="area">
+            Bem vindo ...
+        </div>
+
+        <br/><br/>
+
+        <button onclick="entrar()">Entrar</button> -->
+
+        <!-- segundo metodo -->
+
+        <!-- <div id="area2">
+            Bem vindo ...
+        </div>
+
+        <br/><br/>
+
+        <button onclick="entrar2('Bruno')">Entrar</button> -->
+
+        <!-- terceiro parametro -->
+
+        <!-- <div id="area3">
+            Bem vindo ...
+        </div>
+
+        <br/><br/>
+
+        <button onclick="entrar3(25)">Entrar</button>
+ -->
+
+        <!-- switch -->
+        <!-- <button onclick="pedir()">Fazer pedido</button> -->
+
+        <!-- eventos / mouse / teclado / pagina / formulario e outros -->
+        <!-- evento de mouse -->
+        <!-- <button style="width:400px; height:60px" onmousedown="apertoumouse()"
+         onmouseup="solteiOmouse()"
+         onmouseover="passouOmouse()"
+         onmouseout="tirouOmouse()"
+         onmousemove="movendoOmouse()"
+         >Fazer pedido</button>
+
+         <button style="width:400px; height:60px"
+          onclick="onClick()"
+          oncontextmenu="return botaoDireito()"
+         >Fazer pedido 2</button> -->
+
+        <!-- evento de teclado / precisa passar um evento dentro da funcao (event)-->
+
+        <!-- <input type="text" onkeypress="apertounoteclado(event)"/> -->
+
+        <!-- evento de pagina -->
+
+        <!-- <h1>JavaScript</h1> -->
+
+        <!-- eventos de formulario -->
+        <!-- <form methoh="POST" onsubmit="">
+            <input type="text" name="nome" onfocus="focado()" onblur="desfocado()"> <br /><br />
+            <select name="cidades" onchange="opcaoSelecionada(this)">
+                <option>Sao Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Preto</option>
+                <option>Curitiba</option>
+            </select> <br /><br />
+
+            <input type="submit" value="Enviar">
+
+        </form> -->
+
+
+        <!-- jogo balao -->
+
+        <!-- <h3 id="total" style="color: red"></h3> -->
+        <!-- <form method="POST" name="formulario" onsubmit="return validar()">
+            Digite dois numeros: <input type="text" name="numero" id="numero"> <br /><br />
+            Digite seu nome: <input type="text" name="nome" id="nome"> <br /> <br />
+            <input type="submit" value="Enviar">
+        </form> -->
+
+        <!-- criando calculadora IMC -->
+
+        <form method="POST" onsubmit="">
+            Digite seu peso: <br />
+            <input type="text" name="peso" id="peso" placeholder="Exemplo: 65" /> <br /> <br />
+
+            Digite sua altura: <br />
+            <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.55" /> <br /><br />
+
+            <input type="submit" value="Calcular IMC">
+        </form>
+
+        <div id="resultado">
+
+        </div>
     </body>
 
 </html>

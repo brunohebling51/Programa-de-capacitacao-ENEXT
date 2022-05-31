@@ -8,7 +8,7 @@ export const dado = {
             id: 800,
             main: "Clear",
             description: "clear sky",
-            icon: "01d",
+            icon: "02d",
         },
     ],
     base: "stations",

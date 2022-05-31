@@ -1,15 +1,35 @@
-#container {
-    border: 1px solid black;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: rgb(128, 188, 223);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#temp, #description {
-    padding-top: 100px;
-    text-decoration: none;
+div,
+h1,
+h2 {
+  /* border: 1px solid black; */
+}
+/* text-transform: capitalize; sempre atribui a primeira letra maiuscula */
+
+#week-day {
+  text-decoration: none;
+  padding-bottom: 150px;
+  text-transform: capitalize; 
+}
+
+#container {
+  border: 1px solid black;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(152, 201, 233);
+}
+
+#temp,
+#description {
+  padding-top: 100px;
+  text-decoration: none;
 }
