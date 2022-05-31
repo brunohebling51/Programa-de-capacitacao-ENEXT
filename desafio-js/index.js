@@ -41,6 +41,8 @@ async function main() {
         // container.insertBefore(iconImage);
         container.insertBefore(iconImage, container.children[1]);
 
+        iconImage.style.zoom = '2';
+
 
 
     });

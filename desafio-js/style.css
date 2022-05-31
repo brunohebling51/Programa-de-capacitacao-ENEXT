@@ -11,10 +11,40 @@ h2 {
 }
 /* text-transform: capitalize; sempre atribui a primeira letra maiuscula */
 
+#loading {
+  border: 6px solid #e5e5e5;
+  border-top-color: #51d4db;
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  animation: is-rotating 1s infinite;
+  zoom: 2;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+#description {
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-top: 100px;
+  text-decoration: none;
+}
+
+#temp {
+  font-size: 70px;
+  padding-top: 100px;
+  text-decoration: none;
+}
+
 #week-day {
   text-decoration: none;
   padding-bottom: 150px;
-  text-transform: capitalize; 
+  text-transform: capitalize;
+  font-size: 35px;
 }
 
 #container {
@@ -26,10 +56,4 @@ h2 {
   justify-content: center;
   flex-direction: column;
   background: rgb(152, 201, 233);
-}
-
-#temp,
-#description {
-  padding-top: 100px;
-  text-decoration: none;
 }
