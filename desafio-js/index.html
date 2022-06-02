@@ -6,17 +6,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
-        <title>Exemplo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Clima e Temperatura</title>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
 
     <body>
         <div id="container">
-            <div id="loading"></div>
+            <!-- <div id="loading"></div> -->
             <h2 id="week-day"></h2>
             <h1 id="temp"></h1>
             <h2 id="description"></h2>
-
+            <div id="buttons">
+                <button id="button-save">Salvar</button>
+                <button id="button-exibir">Exibir</button>
+            </div>
         </div>
 
     </body>
