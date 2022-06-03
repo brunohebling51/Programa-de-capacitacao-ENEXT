@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,25 +16,64 @@ div {
 } */
 
 body {
-  background-color: rgb(143, 228, 235);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   width: 100%;
   display: flex;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #container {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+#container:hover {
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+}
+
+#item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+#item:hover {
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
 }
 
 h2 {
   width: 100%;
   text-align: center;
 }
-
-
 
 #hours-and-icon {
   display: flex;
@@ -65,16 +106,13 @@ h2 {
 
 #temp {
   font-size: 70px;
-  padding-top: 10px;
   text-decoration: none;
-  text-shadow: 3px 6px rgba(228, 28, 28, 0.2);
   text-align: center;
 }
 
 #week-day {
   text-decoration: none;
-  margin-bottom: 130px;
-  margin-top: 70px;
+  margin-bottom: 30px;
   text-transform: none;
   font-size: 35px;
   text-align: center;
@@ -86,6 +124,10 @@ h2 {
   font-size: 30px;
 }
 
+#icon {
+  zoom: 2;
+}
+
 #buttons {
   width: 100%;
   display: flex;
@@ -95,19 +137,19 @@ h2 {
 #button-save {
   text-decoration: none;
   border-radius: 20px;
-  padding: 5px;
-  background: black;
+  padding: 5px 30px;
   color: white;
   border: none;
   margin-top: 45px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #button-exibir {
   text-decoration: none;
   border-radius: 20px;
-  padding: 5px;
-  background: black;
+  padding: 5px 30px;
   color: white;
   border: none;
   margin-top: 45px;
+  background: rgba(0, 0, 0, 0.4);
 }
