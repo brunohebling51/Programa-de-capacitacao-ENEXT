@@ -14,14 +14,17 @@ function loadLocalStorageItems() {
             `
             <div id="item">
                 <div>${formatDate(new Date(item.date))}</div>
+                <div>${formatTime(new Date(item.date))}</div>
+                <img src="http://openweathermap.org/img/wn/${item.icon}@2x.png"/>
+                <div>${kelvinToCelsius(item.temp)}</div>
+                <div>${item.description}</div>
             </div>
             `
         )
     })
     const itemsDiv = document.querySelector("#items")
-    itemsHtml.join("")
-    itemsDiv.appendChild(new DOMParser().parseFromString(itemsHtml, "text/html"))
-    console.log(items)
+    itemsDiv.innerHTML = ""
+    itemsDiv.insertAdjacentHTML("beforeend", itemsHtml.join(""))
 }
 
 function addToLocalStorage(item) {
@@ -51,9 +54,10 @@ async function main() {
         const date = new Date();
         const timerData = response;
         const loading = document.getElementById("loading");
-        const localStorageData = [];
+        loading.remove();
 
         const buttonSave = document.querySelector("#button-save");
+        buttonSave.style.display = "block";
         buttonSave.onclick = () => addToLocalStorage({
             date: date,
             temp: timerData.main.temp,
@@ -80,9 +84,10 @@ async function main() {
         // atribuindo valor ao icon da temperatura
         const iconImage = document.querySelector("#icon");
         iconImage.src = `http://openweathermap.org/img/wn/${timerData.weather[0].icon}@2x.png`;
+        
+        loadLocalStorageItems();
 
     });
 }
 
 main();
-loadLocalStorageItems();

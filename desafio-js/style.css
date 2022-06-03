@@ -52,6 +52,8 @@ body {
 #items {
   display: flex;
   flex-direction: column;
+  max-height: 100%;
+  overflow: auto;
 }
 
 #item {
@@ -112,7 +114,6 @@ h2 {
 
 #week-day {
   text-decoration: none;
-  margin-bottom: 30px;
   text-transform: none;
   font-size: 35px;
   text-align: center;
@@ -142,14 +143,5 @@ h2 {
   border: none;
   margin-top: 45px;
   background: rgba(0, 0, 0, 0.4);
-}
-
-#button-exibir {
-  text-decoration: none;
-  border-radius: 20px;
-  padding: 5px 30px;
-  color: white;
-  border: none;
-  margin-top: 45px;
-  background: rgba(0, 0, 0, 0.4);
+  display: none;
 }
