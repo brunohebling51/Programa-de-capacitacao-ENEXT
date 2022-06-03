@@ -4,6 +4,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #3b3b3b transparent;
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b;
+  border-radius: 10px;
+  border: 3px solid transparent;
 }
 
 /* body,
@@ -56,7 +73,7 @@ body {
   overflow: auto;
 }
 
-#item {
+.item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +84,7 @@ body {
   margin: 10px;
   transition: all 0.3s;
 }
-#item:hover {
+.item:hover {
   -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
   box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.36);
 }
@@ -135,13 +152,17 @@ h2 {
   justify-content: space-evenly;
 }
 
-#button-save {
+.button {
   text-decoration: none;
   border-radius: 20px;
   padding: 5px 30px;
   color: white;
   border: none;
-  margin-top: 45px;
+  margin-top: 20px;
   background: rgba(0, 0, 0, 0.4);
+}
+
+#button-save {
   display: none;
+  margin-top: 45px;
 }

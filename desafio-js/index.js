@@ -6,13 +6,17 @@ function getLocalStorageItems() {
     return JSON.parse(window.localStorage.getItem("clima-e-temperatura") || "[]");
 }
 
+function deleteLocalStorageItem() {
+    console.log("clicou")
+}
+
 function loadLocalStorageItems() {
     const items = getLocalStorageItems();
     const itemsHtml = [];
-    items.forEach(function (item) {
+    items.forEach(function (item, index) {
         itemsHtml.push(
             `
-            <div id="item">
+            <div class="item" id="item-${index}">
                 <div>${formatDate(new Date(item.date))}</div>
                 <div>${formatTime(new Date(item.date))}</div>
                 <img src="http://openweathermap.org/img/wn/${item.icon}@2x.png"/>
@@ -21,6 +25,7 @@ function loadLocalStorageItems() {
             </div>
             `
         )
+
     })
     const itemsDiv = document.querySelector("#items")
     itemsDiv.innerHTML = ""
